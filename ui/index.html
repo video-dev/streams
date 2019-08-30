@@ -1,0 +1,94 @@
+
+    <html>
+        <body>
+            <h1>Video-Dev Streams Repository</h1>
+            <pre><code class="json>">[
+	{
+		"title": "Big Buck Bunny",
+		"description": "BBB, 5 renditions",
+		"url": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8",
+		"manifestType": "HLS",
+		"streamType": "VOD",
+		"fileType": "MPEG2-TS",
+		"features": [
+			"Multiple Renditions"
+		],
+		"streamFlaws": [],
+		"segmentFlaws": [],
+		"notes": [],
+		"playerDemos": [
+			"<a href=https://hls-js-latest.netlify.com/demo/?src=https%3A%2F%2Ftest-streams.mux.dev%2Fx36xhzz%2Fx36xhzz.m3u8 target=\"_blank\">Hls.js</a>"
+		]
+	},
+	{
+		"title": "Archived Live VTT Countdown",
+		"description": "Archived live stream with a new VTT cue every second",
+		"url": "https://playertest.longtailvideo.com/streams/live-vtt-countdown/live.m3u8",
+		"manifestType": "HLS",
+		"streamType": "Archived Live",
+		"fileType": "MPEG2-TS",
+		"features": [
+			"Multiple Renditions"
+		],
+		"streamFlaws": [],
+		"segmentFlaws": [],
+		"notes": [],
+		"playerDemos": [
+			"<a href=https://hls-js-latest.netlify.com/demo/?src=https%3A%2F%2Fplayertest.longtailvideo.com%2Fstreams%2Flive-vtt-countdown%2Flive.m3u8 target=\"_blank\">Hls.js</a>"
+		]
+	},
+	{
+		"title": "Radio Host - 10 second start gap",
+		"description": "Audio and video segments do not have intersecting time ranges",
+		"url": "https://s3.amazonaws.com/bob.jwplayer.com/%7Ealex/123633/new_master.m3u8",
+		"manifestType": "HLS",
+		"streamType": "VOD",
+		"fileType": "MPEG2-TS",
+		"features": [],
+		"streamFlaws": [
+			{
+				"flaw": "Gap",
+				"timeRange": [
+					0,
+					10
+				]
+			}
+		],
+		"segmentFlaws": [
+			{
+				"flaw": "Non-intersecting Timestamps",
+				"segmentNumber": 0
+			}
+		],
+		"notes": [],
+		"playerDemos": [
+			"<a href=https://hls-js-latest.netlify.com/demo/?src=https%3A%2F%2Fs3.amazonaws.com%2Fbob.jwplayer.com%2F%257Ealex%2F123633%2Fnew_master.m3u8 target=\"_blank\">Hls.js</a>"
+		]
+	},
+	{
+		"title": "Elephants Dream - Multiple Audio & VTT Tracks",
+		"description": "",
+		"url": "https://wowzaec2demo.streamlock.net/vod-multitrack/_definst_/smil:ElephantsDream/elephantsdream2.smil/playlist.m3u",
+		"manifestType": "HLS",
+		"streamType": "VOD",
+		"fileType": "MPEG2-TS",
+		"features": [
+			"Alternate Audio",
+			"Multiple Renditions",
+			"VTT Subtitles"
+		],
+		"streamFlaws": [],
+		"segmentFlaws": [],
+		"notes": [],
+		"playerDemos": [
+			"<a href=https://hls-js-latest.netlify.com/demo/?src=https%3A%2F%2Fwowzaec2demo.streamlock.net%2Fvod-multitrack%2F_definst_%2Fsmil%3AElephantsDream%2Felephantsdream2.smil%2Fplaylist.m3u target=\"_blank\">Hls.js</a>"
+		]
+	}
+]</code></pre>
+        </body>
+        <link rel="stylesheet" href="style-json.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.9/build/styles/a11y-dark.min.css">
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.9/build/highlight.min.js"></script>   
+        <script>hljs.initHighlightingOnLoad();</script>
+     </html>
+  

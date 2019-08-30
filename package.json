@@ -1,0 +1,22 @@
+{
+  "name": "streams",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:video-dev/streams.git",
+  "author": "John Bartos <jbartos@jwplayer.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "typescript": "^3.5.3",
+    "webpack": "^4.38.0"
+  },
+  "scripts": {
+    "watch": "babel --watch src ---out-dir lib --extensions '.ts,.tsx'",
+    "build": "babel src --out-dir lib --extensions '.ts,.tsx'",
+    "tsc": "tsc",
+    "generate-html": "yarn build && node generate-html.js"
+  }
+}
